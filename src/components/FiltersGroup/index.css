@@ -1,0 +1,35 @@
+.filters-group {
+  width: 100vw;
+  max-width: 200px;
+  border: 1px solid dimgray;
+  text-align: left;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.filters{
+  text-align: left;
+}
+.mobile-filters{
+  display: none;
+}
+
+@media all and (max-width:768px){
+  .filters-group{
+    width: 90vw;
+    border: 0px;
+    padding: 0;
+    box-shadow: none;
+    position: fixed;
+  }
+  .filters{
+    display: none;
+  }
+  .mobile-filters{
+    display: flex;
+  }
+  
+}

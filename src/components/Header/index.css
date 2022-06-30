@@ -1,0 +1,21 @@
+.header{
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: dimgrey;
+}
+
+.products-cart{
+    display:flex;
+}
+
+.header-item{
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+.cart-count{
+    background-color: beige;
+    border-radius: 50px;
+    padding: 2px;
+}

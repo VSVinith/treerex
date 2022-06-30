@@ -1,0 +1,42 @@
+.products-section {
+  width: 100vw;
+  overflow-y: scroll;
+}
+
+.filters-products-section {
+  display: flex;
+  justify-content: flex-start;
+  position: fixed;
+  min-width: 100vw;
+  height: 91vh;
+}
+
+.products-container{
+    width: 92vw;
+}
+
+.search-bar {
+  width: 30%;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid gray;
+}
+
+.prodcts-list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 87vh;
+  overflow-y: scroll;
+}
+
+.failure-loading-view {
+  margin-top: 200px;
+}
+
+@media all and (max-width: 768px) {
+  .filters-products-section {
+    flex-direction: column;
+    position: static;
+  }
+}
