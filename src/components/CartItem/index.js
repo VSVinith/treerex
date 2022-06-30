@@ -1,5 +1,5 @@
-import {BsPlusSquare, BsDashSquare} from 'react-icons/bs'
-import {AiFillCloseCircle} from 'react-icons/ai'
+import { BsPlusSquare, BsDashSquare } from 'react-icons/bs'
+import { AiFillCloseCircle } from 'react-icons/ai'
 
 import CartContext from '../../context/CartContext'
 
@@ -13,8 +13,8 @@ const CartItem = props => (
         incrementCartItemQuantity,
         decrementCartItemQuantity,
       } = value
-      const {cartItemDetails} = props
-      const {id, name, type, quantity, price, imageURL} = cartItemDetails
+      const { cartItemDetails } = props
+      const { id, name, type, quantity, price, imageURL } = cartItemDetails
       const onClickDecrement = () => {
         decrementCartItemQuantity(id)
       }
@@ -53,14 +53,14 @@ const CartItem = props => (
             <div className="total-price-remove-container">
               <p className="cart-total-price">Rs {totalPrice}/-</p>
             </div>
+            <button
+              className="remove-button"
+              type="button"
+              onClick={onRemoveCartItem}
+            >
+              <AiFillCloseCircle color="#616E7C" size={20} />
+            </button>
           </div>
-          <button
-            className="remove-button"
-            type="button"
-            onClick={onRemoveCartItem}
-          >
-            <AiFillCloseCircle color="#616E7C" size={20} />
-          </button>
         </li>
       )
     }}

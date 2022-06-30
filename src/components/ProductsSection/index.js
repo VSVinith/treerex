@@ -80,27 +80,29 @@ class ProductsSection extends Component {
         const searchedProductsList = initialProductsList.filter((product) =>
             product.name.toLowerCase().includes(searchInput.toLowerCase()))
 
-        const colorFiltererProductsList = searchedProductsList.filter((product) =>
+        const colorFilteredProductsList = searchedProductsList.filter((product) =>
             product.color.toLowerCase().includes(colorFilterInput.toLowerCase()))
 
-        if (colorFiltererProductsList.length === 0) {
+        if (colorFilteredProductsList.length === 0) {
             finalFilteredList = []
         } else {
-            finalFilteredList = colorFiltererProductsList
+            finalFilteredList = colorFilteredProductsList
         }
-        const typeFiltererProductsList = finalFilteredList.filter((product) =>
+
+        const typeFilteredProductsList = finalFilteredList.filter((product) =>
             product.type.toLowerCase().includes(typeFilterInput.toLowerCase()))
-        if (typeFiltererProductsList.length === 0) {
+        if (typeFilteredProductsList.length === 0) {
             finalFilteredList = []
         } else {
-            finalFilteredList = typeFiltererProductsList
+            finalFilteredList = typeFilteredProductsList
         }
-        const genderFiltererProductsList = finalFilteredList.filter((product) =>
+
+        const genderFilteredProductsList = finalFilteredList.filter((product) =>
             product.gender.toLowerCase().startsWith(genderFilterInput.toLowerCase()))
-        if (genderFiltererProductsList.length === 0) {
+        if (genderFilteredProductsList.length === 0) {
             finalFilteredList = []
         } else {
-            finalFilteredList = genderFiltererProductsList
+            finalFilteredList = genderFilteredProductsList
         }
 
         return (
